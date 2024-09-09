@@ -1,0 +1,32 @@
+{
+  "name": "@ry0513/napcat-sdk",
+  "version": "0.0.1-alpha.0",
+  "description": "napcat sdk",
+  "type": "module",
+  "main": "./lib/index.js",
+  "files": [
+    "lib/*"
+  ],
+  "types": "./lib/index.d.ts",
+  "scripts": {
+    "dev": "tsx src/index.ts",
+    "dev:watch": "nodemon --watch 'src/**/*' -e ts,tsx --exec 'pnpm run dev'",
+    "build": "tsc",
+    "test": "tsx test.ts"
+  },
+  "keywords": [
+    "napcat"
+  ],
+  "author": "RuoYu",
+  "license": "MIT",
+  "dependencies": {
+    "isomorphic-ws": "^5.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.5.4",
+    "@types/ws": "^8.5.12",
+    "nodemon": "^3.1.4",
+    "tsx": "^4.19.0",
+    "typescript": "^5.5.4"
+  }
+}

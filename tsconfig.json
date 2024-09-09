@@ -1,0 +1,13 @@
+{
+    "compilerOptions": {
+        "outDir": "./lib", // 输出目录
+        "module": "NodeNext", // 或 "ESNext"，取决于你的库
+        "target": "ESNext", // 或其他版本
+        "declaration": true, // 生成类型声明文件
+        "strict": true, // 启用严格模式
+        "moduleResolution": "NodeNext",
+    },
+    "include": [
+        "src/**/*"
+    ]
+}
